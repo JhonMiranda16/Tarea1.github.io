@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultado 1"></div>
+    <div id="resultado 2"></div>
+    <div id="resultado 3"></div>
+    <div id="resultado 4"></div>
+    <script>
+        
+
+        function sumar()
+        {
+            valor1 =prompt("Ingrese su nombre");
+            valor2 =parseInt(prompt("Ingrese un numero para x: "));
+            valor3 =parseInt(prompt("Ingrese un numero para y: "));
+            valor4 =parseInt(prompt("Ingrese un numero para z: "));
+
+            var resultado=valor1;
+            document.getElementById("resultado 1").innerHTML="Su nombre es:  "+resultado;
+
+            var resultado =valor2+valor3+valor4;
+            document.getElementById("resultado 2").innerHTML="La suma de los numeros es:  "+resultado;
+
+            var resultado =valor2*valor3*valor4;
+            document.getElementById("resultado 3").innerHTML="La mutiplicación de los numero da: "+resultado;
+
+            var resultado =valor2-valor2-valor4;
+            document.getElementById("resultado 4").innerHTML="La resta nos da: "+resultado;
+        }
+
+        sumar();
+    </script>
+
+    
+    
+
+</body>
+</html>
